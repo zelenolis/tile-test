@@ -1,0 +1,51 @@
+<input class="input" type="text" placeholder="Поисковый запрос" (focus)="onFocus()" (blur)="onBlur()">
+<ng-container *ngIf="bar">
+  <div class="input_bar">
+    <div class="bar_history">
+      <p>История</p>
+      <ul class="bar_list">
+        <li>закрепить теги</li>
+        <li>кнопка</li>
+        <li>приложение</li>
+        <li>форма</li>
+        <li>текстовое поле</li>
+      </ul>
+    </div>
+    <div class="bar_options">
+      <div>
+        <p class="bar_options_head">Автор</p>
+        <input class="bar_options_input" type="text" placeholder="Имя или должность">
+        <button>Я</button>
+      </div>
+      <div class="bar_checks bar_checks_one">
+        <div>
+          <input type="checkbox" id="member" name="member">
+          <label for="member">Я участник</label>
+        </div>
+        <div>
+          <input type="checkbox" id="strict" name="strict">
+          <label for="strict">Строгий поиск</label>
+        </div>
+        <div>
+          <input type="checkbox" id="headers" name="headers">
+          <label for="headers">В заголовках</label>
+        </div>
+      </div>
+      <p class="bar_options_only">Только</p>
+      <div  class="bar_checks">
+        <div>
+          <input type="checkbox" id="tags" name="tags">
+          <label for="tags">Теги</label>
+        </div>
+        <div>
+          <input type="checkbox" id="requests" name="requests">
+          <label for="requests">Просьбы</label>
+        </div>
+        <div>
+          <input type="checkbox" id="contacts" name="contacts">
+          <label for="contacts">Контакты</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

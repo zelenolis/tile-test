@@ -1,0 +1,24 @@
+@font-face {
+  font-family: body;
+  src: url('./assets/Roboto-Regular.ttf')
+}
+
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --main: #1074CC;
+  --grayfont: #9AA1A6;
+  --darkfont: #2A3033;
+  --lightfont: #7F878C;
+  --lightfont2: #8C9499;
+  --strokes: #E1E4E6;
+  --red: #CC1910;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: body;
+}

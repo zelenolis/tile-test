@@ -1,0 +1,67 @@
+<div class="wrapper">
+  <div class="wrapper_left">
+    <div class="burger">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <img class="logo" src="./assets/logo.png" alt="logo">
+    <div class="menu desktop">
+      <div class="menu_list">
+        <div class="menu_list_link">
+          <img src="./assets/link.png" alt="links logo">
+          <p>Ссылки</p>
+        </div>
+        <div>
+          <img src="./assets/contacts.png" alt="contacts logo">
+          <p>Контакты</p>
+        </div>
+        <div>
+          <img src="./assets/tag.png" alt="tags logo">
+          <p>Теги</p>
+        </div>
+        <div>
+          <img src="./assets/favorites.png" alt="favorites logo">
+          <p>Избранное</p>
+        </div>
+        <div>
+          <img src="./assets/history.png" alt="history logo">
+          <p>Посещения</p>
+        </div>
+        <div class="menu_list_search" (click)="onClick()" (keyup.enter)="onClick()" tabindex="0">
+          <img src="./assets/search.png" alt="search">
+        </div>
+        <app-search (lostFocuses)="onClose($event)" class="search" *ngIf="opened" [@enterAnimation]></app-search>
+      </div>
+      <div class="menu_addon">
+        <img src="./assets/add.png" alt="add">
+      </div>
+    </div>
+  </div>
+  <div class="wrapper_right desktop">
+    <div>
+      <img src="./assets/ava.png" alt="user menu">
+    </div>
+    <div class="wrapper_right_notify">
+      <img src="./assets/notifications.png" alt="notifications">
+      <p class="">32</p>
+    </div>
+  </div>
+  <div class="wrapper_right mobile">
+    <div>
+      <img src="./assets/notifications.png" alt="notifications">
+    </div>
+    <div (click)="onClick()" (keyup.enter)="onClick()" tabindex="0">
+      <img src="./assets/search.png" alt="search">
+    </div>
+    <div>
+      <img src="./assets/history.png" alt="history">
+    </div>
+    <div>
+      <img src="./assets/add.png" alt="add">
+    </div>
+  </div>
+  <app-search (lostFocuses)="onClose($event)" class="search_mobile" *ngIf="opened" [@enterAnimation]></app-search>
+</div>
