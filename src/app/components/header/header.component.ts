@@ -18,7 +18,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
       ]),
       transition(":leave", [
         style({ left: 0, width: "100%" }),
-        animate("200ms ease-in", style({ left: "100%", width: 0 }))
+        animate("200ms ease-in", style({ left: "100%", width: 0, overflow: "hidden" }))
       ])
     ])
   ]
